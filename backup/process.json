@@ -1,0 +1,443 @@
+{
+  apps : [
+  {
+    name        : "siges-api-gateway-multicanal",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_API/siges-api-gateway-multicanal/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 1001,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "JWT_CLAVE": "Peru123456.",
+	  "JWT_TIEMPO_EXPIRACION": "2h"
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 11001,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },{
+    name        : "siges-auditoria",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-auditoria/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3001,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8001,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-maestra",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-maestra/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3002,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8002,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-seguridad",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-seguridad/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3003,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8003,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-producto",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-producto/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3004,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8004,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-asignacioncaja",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-asignacioncaja/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3005,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8005,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-venta",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-venta/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3006,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8006,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-cliente",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-cliente/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3007,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8007,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-pedidos",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-pedidos/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3008,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8008,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-config-empresa",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-config-empresa/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3009,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8009,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-compras",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-compras/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3010,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8010,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-empleado",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-empleado/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3011,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8011,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-proveedor",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_CORE/siges-proveedor/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 3013,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 8013,
+	  "BD_HOST": "localhost",
+	  "BD_PORT": 5432,
+	  "BD_NOMBRE": "siges-zeus",
+	  "BD_USER": "postgres",
+	  "BD_PASS": "Peru123456." 
+    }
+  },
+  {
+    name        : "siges-com-usuario",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_COMPUESTOS/siges-com-usuario/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 4001
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 9001
+    }
+  },
+  {
+    name        : "siges-com-usuariologin",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_COMPUESTOS/siges-com-usuariologin/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 4002,
+	  "JWT_CLAVE":"Peru123456.",
+	  "JWT_TIEMPO_EXPIRACION":"2h",
+	  "PATH_CAMBIA_CLAVE":"http://localhost"
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 9002,
+	  "JWT_CLAVE":"Peru123456.",
+	  "JWT_TIEMPO_EXPIRACION":"2h",
+	  "PATH_CAMBIA_CLAVE":"http://localhost"
+    }
+  },
+  {
+    name        : "siges-com-venta",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_COMPUESTOS/siges-com-venta/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 4003,
+	  "REPO_DOCUMENTOS":"=D:\\INFO\\SIGES\\DESARROLLO\\DEV\\FRONT\\SIGES-ZEUS\\ServerWeb\\nginx-1.18.0\\nginx-1.18.0\\html\\Documentos\\",
+	  "URL_WEB_DOCUMENTOS":"http://localhost/Documentos/"
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 9003,
+	  "REPO_DOCUMENTOS":"=D:\\INFO\\SIGES\\DESARROLLO\\DEV\\FRONT\\SIGES-ZEUS\\ServerWeb\\nginx-1.18.0\\nginx-1.18.0\\html\\Documentos\\",
+	  "URL_WEB_DOCUMENTOS":"http://localhost/Documentos/"
+    }
+  },
+  {
+    name        : "siges-com-empresa",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_COMPUESTOS/siges-com-empresa/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 4004
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 9004
+    }
+  }
+  ,
+  {
+    name        : "siges-com-utilitario",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_UTILITARIOS/siges-com-utilitario/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 5001,
+	  "EMAIL_SERVER":"jodavivi@gmail.com",
+	  "EMAIL_HOST":"smtp.mailtrap.io",
+	  "EMAIL_PORT":2525,
+	  "EMAIL_USUARIO":"88e4b134a396a4",
+	  "EMAIL_CLAVE":"24c5dc09d7b1dc",
+	  "EMAIL_TEMPLATES":"D:\\INFO\\SIGES\\DESARROLLO\\DEV\\BACK\\SERVICIOS_UTILITARIOS\\siges-com-utilitario\\templates\\"
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 5001,
+	  "EMAIL_SERVER":"jodavivi@gmail.com",
+	  "EMAIL_HOST":"smtp.mailtrap.io",
+	  "EMAIL_PORT":2525,
+	  "EMAIL_USUARIO":"88e4b134a396a4",
+	  "EMAIL_CLAVE":"24c5dc09d7b1dc",
+	  "EMAIL_TEMPLATES":"D:\\INFO\\SIGES\\DESARROLLO\\DEV\\BACK\\SERVICIOS_UTILITARIOS\\siges-com-utilitario\\templates\\"
+    }
+  },
+  {
+    name        : "siges-com-documento",
+    script      : "D:/INFO/SIGES/DESARROLLO/DEV/BACK/SERVICIOS_UTILITARIOS/siges-com-documento/lib/index.js",
+	instances: 1, 
+    env: {
+      "NODE_ENV": "development",
+	  "HOST": "localhost",
+	  "PORT": 5002,
+	  "IMAGEN_FOLDER": "D:\\INFO\\SIGES\\DESARROLLO\\DEV\\FRONT\\SIGES-ZEUS\\ServerWeb\\nginx-1.18.0\\nginx-1.18.0\\html\\Imagenes\\",
+	  "SERVER_IMAGEN": "http://localhost/Imagenes/"
+    },
+    env_production : {
+      "NODE_ENV": "production",
+	  "HOST": "localhost",
+	  "PORT": 10002,
+	  "IMAGEN_FOLDER": "D:\\INFO\\SIGES\\DESARROLLO\\DEV\\FRONT\\SIGES-ZEUS\\ServerWeb\\nginx-1.18.0\\nginx-1.18.0\\html\\Imagenes\\",
+	  "SERVER_IMAGEN": "http://localhost/Imagenes/"
+    }
+  }]
+}
